@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IOTA Price</title>
+</head>
+<body>
+	<h1>Welcome!</h1>
+	<h3>Subscribe to our mailing list to get IOTA's price big changes</h3>
+	<h3>We will notify you if IOTA's price changes over 20%</h3>
+	<form method="POST">
+		{% if error %}
+			<h5>{{msg}}</h5>
+			<input style="border-color: red;" type="email" name="email" placeholder="youremail@example.com">
+			
+		{% else %}
+			<input type="email" name="email" placeholder="youremail@example.com">
+		{% endif %}
+		<input type="Submit" name="">
+	</form>
+</body>
+</html>
